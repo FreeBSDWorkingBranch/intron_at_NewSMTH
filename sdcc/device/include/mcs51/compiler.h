@@ -226,14 +226,14 @@ extern void _nop (void);
  */
 #else
 # warning unrecognized compiler
-# define SBIT(name, addr, bit)  volatile bool           name
-# define SFR(name, addr)        volatile unsigned char  name
-# define SFRX(name, addr)       volatile unsigned char  name
-# define SFR16(name, addr)      volatile unsigned short name
-# define SFR16E(name, fulladdr) volatile unsigned short name
-# define SFR16LEX(name, addr)   volatile unsigned short name
-# define SFR32(name, fulladdr)  volatile unsigned long  name
-# define SFR32E(name, fulladdr) volatile unsigned long  name
+# define SBIT(name, addr, bit)  extern volatile bool           name
+# define SFR(name, addr)        extern volatile unsigned char  name
+# define SFRX(name, addr)       extern volatile unsigned char  name
+# define SFR16(name, addr)      extern volatile unsigned short name
+# define SFR16E(name, fulladdr) extern volatile unsigned short name
+# define SFR16LEX(name, addr)   extern volatile unsigned short name
+# define SFR32(name, fulladdr)  extern volatile unsigned long  name
+# define SFR32E(name, fulladdr) extern volatile unsigned long  name
 
 #endif
 
