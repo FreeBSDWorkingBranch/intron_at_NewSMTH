@@ -29,6 +29,8 @@
 #ifndef REG8051_H
 #define REG8051_H
 
+#include <compiler.h>
+
 /*  BYTE Register  */
 SFR(P0, 0x80);
 SFR(SP, 0x81);
