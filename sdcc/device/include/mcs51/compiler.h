@@ -235,6 +235,9 @@ extern void _nop (void);
 # define SFR32(name, fulladdr)  extern volatile unsigned long  name
 # define SFR32E(name, fulladdr) extern volatile unsigned long  name
 
+# define __xdata
+# define __interrupt(i)
+
 #endif
 
 #endif //COMPILER_H
